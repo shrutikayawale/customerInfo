@@ -1,7 +1,7 @@
 # Candidate Information application
 
 In the project directory, you can run:
-1. git clone the project in your local machine (git clone )
+1. git clone the project in your local machine (git clone https://github.com/shrutikayawale/customerInfo.git)
 2. do 'npm install' to install all the dependencies 
 3. do 'npm start' to start the application 
 
