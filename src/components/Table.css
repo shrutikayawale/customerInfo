@@ -1,0 +1,30 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th { 
+    background-color: #f2f2f2;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+button {
+    margin-left: 900px;
+    background-color: white;
+    color: blue;
+    height: 25px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+filter {
+    padding: 7px;
+    margin: 27px;
+    float: right;
+    width: 250px;
+    margin-top: -45px;
+}
