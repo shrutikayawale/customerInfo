@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import { Spin } from 'antd';
+import Spin from 'antd/es/spin';
+import 'antd/lib/spin/style/index.css';
 import {getAge} from '../utils/dateUtil';
 import {ErrorHandler} from './ErrorHandler';
 import {configUrl} from '../config/config'
@@ -64,8 +65,7 @@ export const Table = () => {
                 setIsLoading(false);
             }            
         })();
-
-    });
+    }, []);
 
     const onSortHandler = event => {
         const selectedColumn = event.target.innerText;
@@ -156,9 +156,9 @@ export const Table = () => {
 					</tbody>
 				</table>
 
-    return isLoading ? <Spin tip="Loading..." /> :  <div>
+    return isLoading ? <Spin tip="Loading..." size='large' style={{ marginLeft: '600px', marginTop: '150px'}}/> :  <div>
         <input type="text" value={filter} onChange={onFilterHandler} placeholder='Type here to filter out the data...' style={{ margin: '10px', padding: '6px', width: '250px'}}></input>
         {tableData}
-    </div>;      
+    </div>;
 
 };
